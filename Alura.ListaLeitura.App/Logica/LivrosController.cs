@@ -49,5 +49,10 @@ namespace Alura.ListaLeitura.App.Logica
             var livro = repo.Todos.First(l => l.Id == id);
             return context.Response.WriteAsync(livro.Detalhes());
         }
+
+        public string Teste()
+        {
+            return "nova funcionalidade implementada!";
+        }
     }
 }
